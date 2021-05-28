@@ -1,0 +1,329 @@
+:root {
+  --background: #f0f2f5;
+
+  --blue: #5429cc;
+  --yellow-light: #d6c52a;
+  --text-title: #363f5f;
+  --text-body: #969cb3;
+  --shape: #ffeef1;
+  --green: #33cc95;
+  --red: #e52e4d;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%; //15px
+  }
+  @media (max-width: 720px) {
+    font-size: 87.7%; //14px
+  }
+}
+#background {
+  background-image: url("/assets/background.jpg");
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 600;
+}
+button {
+  cursor: pointer;
+}
+[disable] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/*configuração inicial do body*/
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-bottom: 1px solid #d6c52a;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-logo img {
+  height: 100px;
+}
+
+/*configuraçao no navbar*/
+
+.limite-formulario {
+  display: flex;
+  justify-content: center;
+
+  background: var(--yellow-light);
+  width: 80%;
+}
+.titulo-formulario img {
+}
+
+.formulario-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin: 0 20px 20px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+.titulo img {
+  width: 100px;
+}
+
+form input {
+  border-radius: 5px;
+  width: 100%;
+  min-width: 80%;
+  height: 40px;
+  text-align: center;
+  background-color: #d6c52a;
+  box-shadow: 5px 5px 9px;
+  border: none;
+}
+
+label {
+  position: relative;
+  top: 20px;
+}
+
+.input-button {
+  margin-top: 10px;
+  background-color: white;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 3px 3px 5px;
+  cursor: not-allowed;
+
+
+}
+
+@media screen and (max-width: 425px) {
+  
+  .limite-formulario {
+    display: flex;
+    justify-content: center;
+  
+    background: var(--yellow-light);
+    width: 100%;
+    height: 80vh;
+  }
+  .titulo-formulario {
+    display: none;
+  }
+
+  .formulario-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    margin: 0 10px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  form input {
+    border-radius: 5px;
+    width: 100%;
+    
+    height: 35px;
+    text-align: center;
+    background-color: #d6c52a;
+    box-shadow: 5px 5px 9px;
+    border: none;
+  }
+
+  label {
+    position: relative;
+    top: 20px;
+  }
+  
+  .input-button {
+    margin-top: 10px;
+    background-color: white;
+    font-size: 20px;
+    cursor: not-allowed;
+  }
+ 
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+  .limite-formulario {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+  
+    background: var(--yellow-light);
+    width: 100%;
+    height: 90vh;
+  }
+
+  
+  .titulo-formulario img{
+    width: 150px;
+    
+  }
+
+  .formulario-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    margin: 0 10px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 70%;
+    font-size: 14px;
+  }
+
+  form input {
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px 0;
+    height: 35px;
+    text-align: center;
+    background-color: #d6c52a;
+    box-shadow: 5px 5px 9px;
+    border: none;
+  }
+
+  label {
+    position: relative;
+    top: 10px;
+  }
+  
+  .input-button {
+    cursor: not-allowed;
+    margin-top: 10px;
+    background-color: white;
+    font-size: 20px;
+  } 
+  
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  .limite-formulario {
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+  
+    background: var(--yellow-light);
+    width: 100%;
+    height: 90vh;
+  }
+
+  
+  .titulo-formulario img{
+    
+    
+  }
+
+  .formulario-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    margin: 0 10px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 70%;
+    font-size: 14px;
+    
+  }
+
+  form input {
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px 0;
+    height: 35px;
+    text-align: center;
+    background-color: #d6c52a;
+    box-shadow: 5px 5px 9px;
+    border: none;
+  }
+
+  label {
+    position: relative;
+    top: 10px;
+  }
+  
+  .input-button {
+    margin-top: 10px;
+    background-color: white;
+    font-size: 20px;
+    
+
+  } 
+  
+}
+
+/*VALIDACAO DO FORMULARIO*/
+
+.input-button.error{
+  background: #d11212;
+
+}
+
+.input-button:disabled{
+  cursor: not-allowed;
+  background-color: #d11212;
+  color: white;
+}
