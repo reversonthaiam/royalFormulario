@@ -200,26 +200,6 @@ label {
   }
 
  
-  .span-valido {
-    display: none;
-    float: right;
-    color: #21bd0d;
-    position: relative;
-    right: 20px;
-    bottom: 15px;
-  }
-  
- 
-
-  .span-invalido {
-    display: none;
-    float: right;
-    color: #d11212;
-    position: relative;
-    right: 20px;
-    bottom: 15px;
-  }
-  
  
 }
 
