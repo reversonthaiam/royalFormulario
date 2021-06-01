@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://kit.fontawesome.com/f4263c1d59.js" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 
     <script src="./js/script.js"></script>
@@ -35,40 +36,58 @@
           </div>
           <div class="formulario-input">
             <form id="formulario" action="post">
-              <label for="">Nome</label
-              ><input
-                id="name"
-                name="name"
-                placeholder="Insira seu nome"
-                type="text"
-                required
-              />
-              <span></span>
-              <label for="">E-mail</label
-              ><input
-                id="mail"
-                name="mail"
-                placeholder="Insira seu e-mail"
-                type="email"
-                required
-              />
-              <span></span>
-              <label for="">Telefone</label
-              ><input
-                id="phone"
-                name="phone"
-                type="number"
-                placeholder="Insira seu telefone"
-              />
-              <span></span>
-              <label for="">CPF</label
-              ><input
-                id="cpf"
-                name="cpf"
-                type="number"
-                placeholder="Insira seu CPF"
-              />
-              <span></span>
+              <div class="ajuste-input">
+                <label for="">Nome</label
+                  ><input
+                    id="name"
+                    
+                    name="name"
+                    placeholder="Insira seu nome"
+                    type="text"
+                    required
+                  />
+                  <span class="span-valido"><i class="fas fa-check"></i></span>
+                  <span class="span-invalido"><i class="fas fa-exclamation-triangle"></i></span>
+              </div>
+              <div class="ajuste-input">
+                <label for="">E-mail</label
+                  ><input
+                    id="mail"
+                    name="mail"
+                    placeholder="Insira seu e-mail"
+                    type="email"
+                    required
+                  />
+                  <span class="span-valido"><i class="fas fa-check"></i></span>
+                  <span class="span-invalido"><i class="fas fa-exclamation-triangle"></i></span>
+              </div>
+              
+              <div class="ajuste-input">
+                <label for="">Telefone</label
+                  ><input
+                    id="phone"
+                    name="phone"
+                    type="number"
+                    placeholder="Insira seu telefone"
+                    
+                  />
+                  <span class="span-valido"><i class="fas fa-check"></i></span>
+                  <span class="span-invalido"><i class="fas fa-exclamation-triangle"></i></span>
+              </div>
+              
+              <div class="ajuste-input">
+                <label for="">CPF</label
+                  ><input
+                    id="cpf"
+                    name="cpf"
+                    type="number"
+                    placeholder="Insira seu CPF"
+                    
+                  />
+                  <span class="span-valido"><i class="fas fa-check"></i></span>
+                  <span class="span-invalido"><i class="fas fa-exclamation-triangle"></i></span>
+              </div>
+              
               <button
                 id="button"
                 class="input-button"
